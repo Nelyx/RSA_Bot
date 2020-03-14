@@ -6,6 +6,16 @@ fuck them
 
 */
 
+// defined pins for relay board
+#define pump_water 2
+#define pump_alcohol = 3
+#define led_green1 = 7
+#define led_green2 = 8
+#define led_orange = 9
+#define led_red = 10
+#define led_blue1 = 11
+#define led_blue2 = 12
+
 // This is were i put varaiables that are important, really its just a waste of memory, define is a better way to do this
 int Wtr_Pump = 2;
 int Alc_Pump = 3;
@@ -15,7 +25,8 @@ int ledOrg = 9;
 int ledRed = 10;
 int ledBlul = 11;
 int ledBluh = 12;
-int enbSens = 4;
+
+
 int ledSeq[6] = {ledBluh, ledBlul, ledRed, ledOrg, ledGrnh, ledGrnl}; // high to low
 
 // This is also pointless, i need to remember the length of this array to change the pinSet function...
